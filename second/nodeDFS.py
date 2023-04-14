@@ -13,12 +13,12 @@ def DFS(v):
     for i in A[v]:
         if not visited[i]:
             DFS(i)
-            
+
 for _ in range(edge):
     s, e = map(int, input().split())
     A[s].append(e)
     A[e].append(s)
-print(A)
+    
 count = 0
 
 for i in range(1, node+1):

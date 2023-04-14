@@ -6,7 +6,7 @@ num = sys.stdin.readline().rstrip()
 ten, il, count, total = 0, 0, 0, 0
 print(num)
 if(int(num) < 9):
-    num = "0" + num
+    num = '0' + num
     
 ten = int(num[0])
 il = int(num[1])

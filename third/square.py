@@ -3,13 +3,13 @@ import sys
 sys.stdin = open('third/inputnemo.txt', 'rt')
 input = sys.stdin.readline
 
-c, r = map(int, input().split())
-A = [[] for _ in range(c)]
+x1, y1, x2 , y2 = map(int, input().split())
 
-for i in range(c):
-    A[i] = list(map(int, input().rstrip()))
+x3 = x2 - x1
+y3 = y2 - y1
 
-for i in range(c):
-    for j in range(r):
-        if i == j:
-            print(A[i][j])
+A = [x1, y1, x3, y3]
+
+A.sort()
+
+print(A[0])

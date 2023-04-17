@@ -10,6 +10,7 @@ count = 0
 s = 0
 e = 0
 sum = 0
+# 동적 구간 합...?
 while (s < n) :
     if (sum == r):
         count += 1

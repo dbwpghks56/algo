@@ -14,7 +14,7 @@ def mola(roomss:dict, users: list, i : int):
     low = int(roomss[i][0][0]) - 10
     large = int(roomss[i][0][0]) + 10
     
-    if low <= int(users[0]) and large >= int(users[0]) and len(roomss[i]) < 5:
+    if low <= int(users[0]) and large >= int(users[0]) and len(roomss[i]) < roomLimit:
         roomss.get(i).append(users)
         return
     else:
@@ -24,18 +24,18 @@ for _ in range(roomNumber):
     user = list(input().split())
     if flag:
         rooms[0].append(user)
+        flag = False
     
     else:
         mola(rooms, user, 0)
                 
-    flag = False
     
 for i in range(len(rooms.keys())):
     rooms[i].sort(key= lambda x : x[1])
-    if len(rooms[i]) == 5:
+    if len(rooms[i]) == roomLimit:
         print("Started!")
         
-    elif len(rooms[i]) < 5:
+    elif len(rooms[i]) < roomLimit:
         print("Waiting!")
     
     for c in rooms[i]:

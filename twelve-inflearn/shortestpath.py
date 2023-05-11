@@ -22,6 +22,7 @@ def bfs(grid):
         
         if cur_x == col-1 and cur_y == row-1:
             shortest_path_len = cur_l
+            break
             
         for dx, dy in delta:
             next_x = cur_x + dx

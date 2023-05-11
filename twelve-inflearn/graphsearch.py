@@ -28,5 +28,6 @@ def dfs(cur_v):
             
     return visited
 
+print(graph)
 print(bfs(start_v='A'))
 print(dfs('A'))

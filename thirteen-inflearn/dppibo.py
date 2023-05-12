@@ -1,5 +1,5 @@
 memo = {}
-
+# top down 형식
 def fipo(n):
     if n == 1 or n == 2:
         return 1

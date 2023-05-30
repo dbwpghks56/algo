@@ -29,9 +29,9 @@ def uniquePathAlgo(m,n):
             dp[(r,c)] = uniquePath
         
         return dp[(r,c)]
-    
+    print(dp)
     return dptd(m-1,n-1)
-
+print(uniquePathAlgo(3,7))
 # dp = [[-1] * n for _ in range(m)]
 
 def uniquePathAlgoArray(m,n):
@@ -52,7 +52,7 @@ def uniquePathAlgoArray(m,n):
             dp[r][c] = uniquePath
         
         return dp[r][c]
-    
+    print(dp)
     return dptd(m-1,n-1)
 
 # Bottom Up 방식은 내가 짜볼 거임

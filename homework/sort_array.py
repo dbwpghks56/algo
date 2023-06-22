@@ -6,4 +6,5 @@ def sort_array(arr):
     unique_words.sort(key=lambda x: (len(x), x))
     
     return unique_words
+
 print(sort_array(['stayfolio', 'hand', 'curation', 'tuna', 'yes', 'no', 'style', 'stash']))

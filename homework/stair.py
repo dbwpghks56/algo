@@ -1,5 +1,5 @@
 dt = {}
-def solution(n):
+def stair(n):
     if n == 1 or n == 2:
         return 1
     
@@ -8,4 +8,4 @@ def solution(n):
     
     return dt[n]
 
-print(solution(3))
+print(stair(3))
